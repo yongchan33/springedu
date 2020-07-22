@@ -22,15 +22,15 @@ import com.kh.portfolio.member.vo.MemberVO;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
-public class MemberDAOImplJDBCTest {
+public class MemberDAOImplXMLest2 {
 
 	private final static Logger logger
-		= LoggerFactory.getLogger(MemberDAOImplJDBCTest.class);
+		= LoggerFactory.getLogger(MemberDAOImplXMLest2.class);
 
 	@Inject
 	//@Qualifier : spring 컨테이너에 동일타입의 bean이 존재할경우 명시적으로 참조하고자하는 bean을 지정할때 사용
 	//spring 컨테이너에서 관리되는 bean이름은 특별히 지정해주지않으면 클래스명을 기본값으로 갖는다.
-	@Qualifier("memberDAOImplJdbc")	//소문자로 들어감, 
+	@Qualifier("memberDAOImplXML")	//소문자로 들어감, 
 	MemberDAO memberDAO;
 	
 	
